@@ -1,4 +1,186 @@
 body{
+    width: 100%;
+    height: auto;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* <!-- Header Section Start Here ------------------------------------------------> */
+header{
+    background-color: #2d25a0;
+    width: 100%;
+    height: 677px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
+
+.navigation-bar{
+    width: 73%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 5000;
+    margin-right: 36px;
+    transition: ease-out 0.3s;
+}
+
+.navigation-content a:hover{
+    color: #E02C6D;
+}
+
+
+/* Login Button */
+.login-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 5000;
+    padding: 10px 24px 10px 24px;
+    outline: none;
+    transition: ease-out 0.3s;
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+    border: 3px solid rgb(0, 217, 255);
+}
+
+.login-button a:hover{
+    color: black;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+
+.login-button a:before{
+    transition: 0.3s all ease;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 217, 255);
+}
+
+
+.login-button a:hover:before{
+    transition: 0.3s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+
+
+
+
+/* Top Section Here */
+.Top-Section-with-img{
+    padding-top: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.Top-Text-section{
+    margin-left: 25%;
+}
+
+.Top-Text-section h1{
+    padding-right: 62px;
+    font-size: 64px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.Top-Text-section a{
+    border-radius: 4px;
+    background-color:#E02C6D;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 7000;
+    padding: 10px 24px 10px 24px;   
+    transition: ease-out 0.3s;
+}
+.Top-Text-section a:hover{
+    box-shadow: inset 200px 0 0 0 rgb(0, 217, 255);
+    color: black;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/* Top Image Section */
+.Top-image-section{
+    position: relative;
+    margin-right: 29%;
+}
+
+.Top-image-section img{
+    width: 100%;
+    height: auto;
+}
+
+
+header:hover .football-man{
+    transform: rotate(30deg);
+    transition: transform 0.5s ease-in ;
+    transform-origin: top;
+}
+
+.football-man{
+    width: 85px;
+    height: auto;
+    position: absolute;
+    top: 165px;
+    left: 213px;
+}
+
+.ball{
+    left: 74px;
+    top: 281px;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+}
+
+header:hover .ball{
+    transform: translatey(-400px) translatex(-1000px);
+    transition: transform 2s ease-out .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
