@@ -22,7 +22,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .navigation-bar{
@@ -32,20 +31,10 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-
-.navigation-content a{
-    text-decoration: none;
+.navigation-content{
+    font-size: 40px;
     color: white;
-    font-size: 16px;
-    font-weight: 5000;
-    margin-right: 36px;
-    transition: ease-out 0.3s;
 }
-
-.navigation-content a:hover{
-    color: #E02C6D;
-}
-
 
 /* Login Button */
 .login-button a{
@@ -112,6 +101,7 @@ nav{
     font-size: 64px;
     font-weight: 700;
     color: white;
+    transition: ease-in .3s;
 }
 
 
@@ -218,6 +208,9 @@ main{
     color: gray;
 }
 
+.players:hover{
+    border: 2px solid black;
+}
 
 
 
@@ -225,4 +218,119 @@ main{
 
 
 
+/* Highlights Section Start Here------------------------ */
+
+.Highlights-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    margin-top: 165px;
+}
+
+.All-Highlights{
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+}
+
+.Highlights-Text h1{
+    font-size: 48px;
+    color: #0A0826;
+    margin: 0;
+    padding-right: 30px;
+}
+
+.Highlights-Text p{
+    color: gray;
+    margin: 8px 0px 24px 0px;
+    padding-right: 70px;
+}
+
+.Highlights-Text a{
+    
+    border-radius: 4px;
+    background-color:#E02C6D;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 7000;
+    padding: 10px 24px 10px 24px;   
+    transition: ease-out 0.3s;
+}
+
+.Highlights-Text a:hover{
+    box-shadow: inset 200px 0 0 0 black;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.Highlights-Image img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Footer Section Start Here-------------------- */
+footer{
+    width: 100%;
+    margin-top: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer-content{
+    width: 40%;
+    text-align: center;
+}
+
+.footer-football-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icons .fab{
+    margin-right: 20px;
+    font-size: 25px;
+    padding: 8px;
+    background-color: rgba(128, 128, 128, 0.548);
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.411);
+}
+
+.coppyright{
+    color:  gray;
+    letter-spacing: 1.3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------
+                        Media Queries
+------------------------------------------------------------------ */
+
+/* For Mobile Device---------------------------------------------- */
 
